@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call-Apply-Bind</title>
+</head>
+<body>
+
+
+    <script>
+
+        //-------Call-Method-Using-Function
+
+        // let obj={
+        //     Name:"Ganesh",
+        //     Age:22,
+        // }
+
+        // function main(a,b,c){
+        //     console.log(this,a,b,c);
+        // }
+        
+        // main.call(obj,1,2,3);
+        
+
+        //-------Call-Method-Using-Function
+
+        // let obj={
+        //     Name:"Ganesh",
+        //     Age:22,
+        // }
+
+        // function main(a,b,c){
+        //     console.log(this,a,b,c);
+        // }
+        
+        // main.apply(obj,[1,2,3]);
+
+
+        //-------Call-Method-Using-Function
+
+        let obj={
+            Name:"Ganesh",
+            Age:22,
+        }
+
+        function main(a,b,c){
+            console.log(this,a,b,c);
+        }
+        
+        let fun= main.bind(obj,1,2,3);
+        fun();
+
+
+    </script>
+
+</body>
+</html>
